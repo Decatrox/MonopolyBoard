@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.orange {
+    background-color: #ff4d00;
+}
+
+.pink {
+    background-color: #ff00de;
+}
+
+.brown {
+    background-color: #803908;
+}
+
+.container-fluid {
+    width: 98vmin;
+    height: 98vmin;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(162,255,176,0.52);
+}
+
+.row {
+    height: 7.69%;
+}
+
+.vertical {
+    height: 15.4%;
+}
+
+.row .small {
+    height: 25%;
+}
+
+.row .big {
+    height: 75%;
+}
+
+.small-col {
+    width: 20%;
+}
+
+.big-col {
+    width: 80%;
+}
+
+.corner, .cell {
+    border: 1px solid #000;
+}
+
+.corner {
+    background-color: #c8d9c5;
+}
+
+.empty {
+    background-color: transparent;
+}
+
+.cell :hover {
+    background-color: #40af2d;
+}
+
+.corner:hover {
+    animation: rotateCorner 3s linear infinite;
+}
+
+@keyframes rotateCorner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) or (max-height: 600px) {
+    .container-fluid {
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+    }
+}
